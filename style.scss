@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #000;
+}
+
+.navbar-section{
+    height: 50px;
+    background-color: rgb(224, 27, 27);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navbar-logo{
+        margin: 0 100px;
+        flex: 2;
+    }
+    .navbar-items{
+        flex: 4;
+        .navbar-item{
+            color:#ffffff;
+            text-decoration: none;
+            float: right;
+            flex-direction: column-reverse;
+            padding: 10px;
+            margin: 0 5%;
+        }
+        
+    }
+}
+
+.about-section{
+    background-color: rgb(46, 46, 225);
+    .about-para{
+        color: #fff;
+    }
+}
+
+.products-section{
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.service-section{
+    padding: 20px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    .left-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .right-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.contact-section{
+    background-color: rgb(26, 255, 0);
+    color: #fff;
+   display: flex;
+   .left-contact{
+    padding: 50px;
+    flex:2;
+    .contact-item{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        h3{
+            padding: 5px;
+            margin-right: 20px;
+        }
+    }
+   }
+   .right-contact{
+    padding: 50px;
+    flex:2;
+   }
+}
+
+.footer-section{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
