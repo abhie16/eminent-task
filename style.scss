@@ -17,7 +17,8 @@ body{
     justify-content: center;
     align-items: center;
     .navbar-logo{
-        margin: 0 100px;
+        margin-right: 100px;
+        margin-left: 50px;
         flex: 2;
     }
     .navbar-items{
@@ -35,38 +36,80 @@ body{
 }
 
 .about-section{
+    padding: 40px;
     background-color: rgb(46, 46, 225);
-    .about-para{
+    h3{
         color: #fff;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    .about-para{
+        color: rgb(213, 208, 208);
+        padding: 10px;
     }
 }
 
-.products-section{
+.product-div{
     background-color: green;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    h3{
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 50px  50px 0 50px;
+    }
+    .products-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        .product{
+            margin: 50px;
+            img{
+            border-radius: 10px;
+            width: 400px;
+            height: 300px;
+            }
+            iframe{
+            border-radius: 10px;
+            width: 400px;
+            height: 300px;
+            }
+        }
+    }
 }
 
-.service-section{
-    padding: 20px;
+
+.service-div{
     background-color: gray;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem;
-    .left-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    h3{
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 50px  50px 0 50px;
     }
-    .right-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    .service-section{
+        color: rgb(213, 208, 208);
+        padding: 20px 50px 50px 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5rem;
+        h4{height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .left-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        }
+        .right-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
+
 
 .contact-section{
     background-color: rgb(26, 255, 0);
-    color: #fff;
+    color: rgb(253, 247, 247);
    display: flex;
    .left-contact{
     padding: 50px;
@@ -74,10 +117,16 @@ body{
     .contact-item{
         display: flex;
         align-items: center;
-        color: #fff;
-        h3{
-            padding: 5px;
+        color: rgb(253, 247, 247);
+        h4{
             margin-right: 20px;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(253, 247, 247);
         }
     }
    }
@@ -88,7 +137,8 @@ body{
 }
 
 .footer-section{
-    color: #fff;
+    padding: 20px;
+    color: rgb(213, 208, 208);
     display: flex;
     justify-content: center;
     align-items: center;

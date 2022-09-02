@@ -18,7 +18,8 @@ body {
   align-items: center;
 }
 .navbar-section .navbar-logo {
-  margin: 0 100px;
+  margin-right: 100px;
+  margin-left: 50px;
   flex: 2;
 }
 .navbar-section .navbar-items {
@@ -34,38 +35,79 @@ body {
 }
 
 .about-section {
+  padding: 40px;
   background-color: rgb(46, 46, 225);
 }
-.about-section .about-para {
+.about-section h3 {
   color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.about-section .about-para {
+  color: rgb(213, 208, 208);
+  padding: 10px;
 }
 
-.products-section {
+.product-div {
   background-color: green;
+}
+.product-div h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 50px 50px 0 50px;
+}
+.product-div .products-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
+}
+.product-div .products-section .product {
+  margin: 50px;
+}
+.product-div .products-section .product img {
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+}
+.product-div .products-section .product iframe {
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
 }
 
-.service-section {
-  padding: 20px;
+.service-div {
   background-color: gray;
+}
+.service-div h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 50px 50px 0 50px;
+}
+.service-div .service-section {
+  color: rgb(213, 208, 208);
+  padding: 20px 50px 50px 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
+  grid-column-gap: 5rem;
 }
-.service-section .left-container {
+.service-div .service-section h4 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-div .service-section .left-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.service-section .right-container {
+.service-div .service-section .right-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .contact-section {
   background-color: rgb(26, 255, 0);
-  color: #fff;
+  color: rgb(253, 247, 247);
   display: flex;
 }
 .contact-section .left-contact {
@@ -75,11 +117,17 @@ body {
 .contact-section .left-contact .contact-item {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: rgb(253, 247, 247);
 }
-.contact-section .left-contact .contact-item h3 {
-  padding: 5px;
+.contact-section .left-contact .contact-item h4 {
   margin-right: 20px;
+}
+.contact-section .left-contact .contact-item p {
+  font-size: 1.3rem;
+}
+.contact-section .left-contact .contact-item a {
+  text-decoration: none;
+  color: rgb(253, 247, 247);
 }
 .contact-section .right-contact {
   padding: 50px;
@@ -87,7 +135,8 @@ body {
 }
 
 .footer-section {
-  color: #fff;
+  padding: 20px;
+  color: rgb(213, 208, 208);
   display: flex;
   justify-content: center;
   align-items: center;
