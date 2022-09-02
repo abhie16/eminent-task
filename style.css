@@ -28,10 +28,11 @@ body {
 .navbar-section .navbar-items .navbar-item {
   color: #ffffff;
   text-decoration: none;
-  float: right;
-  flex-direction: column-reverse;
-  padding: 10px;
-  margin: 0 5%;
+  padding: 20px;
+  margin: 0 10px;
+}
+.navbar-section .navbar-items .navbar-item:hover {
+  font-weight: bold;
 }
 
 .about-section {
@@ -59,19 +60,19 @@ body {
 .product-div .products-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 .product-div .products-section .product {
-  margin: 50px;
+  margin: 20px 50px;
 }
 .product-div .products-section .product img {
   border-radius: 10px;
-  width: 400px;
+  width: 100%;
   height: 300px;
 }
 .product-div .products-section .product iframe {
   border-radius: 10px;
-  width: 400px;
+  width: 100%;
   height: 300px;
 }
 
@@ -88,7 +89,7 @@ body {
   padding: 20px 50px 50px 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5rem;
+  grid-column-gap: 2rem;
 }
 .service-div .service-section h4 {
   height: 50px;
@@ -99,10 +100,12 @@ body {
 .service-div .service-section .left-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
 }
 .service-div .service-section .right-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
 }
 
 .contact-section {
@@ -129,6 +132,10 @@ body {
   text-decoration: none;
   color: rgb(253, 247, 247);
 }
+.contact-section .left-contact .contact-item a:hover {
+  color: red;
+  text-decoration: underline;
+}
 .contact-section .right-contact {
   padding: 50px;
   flex: 2;
@@ -140,4 +147,44 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 925px) {
+  .product-div .products-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .navbar-section {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .navbar-section .navbar-items {
+    -moz-columns: reverse;
+         columns: reverse;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .product-div .products-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-div .service-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-div .service-section .left-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-div .service-section .right-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
